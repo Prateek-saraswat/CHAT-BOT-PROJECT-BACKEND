@@ -1,6 +1,6 @@
-import Groq from "groq-sdk";
+// import Groq from "groq-sdk";
 
-// const Groq = require('groq-sdk')
+const Groq = require('groq-sdk')
 
 const groq = new Groq({
   apiKey: process.env.OPENAI_API_KEY,
@@ -121,7 +121,7 @@ const generateSummary = async (documentContent) => {
   }
 };
 
-export {
+module.export =  {
   generateResponse,
   generateSummary,
 };
