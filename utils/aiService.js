@@ -21,7 +21,7 @@ const generateResponse = async (question, documentContent) => {
       : "No document uploaded.";
 
     const completion = await groq.chat.completions.create({
-      model: "llama3-70b-8192",
+      model: "openai/gpt-oss-120b",
       messages: [
         {
           role: "system",
