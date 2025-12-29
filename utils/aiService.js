@@ -121,7 +121,7 @@ const generateSummary = async (documentContent) => {
   }
 };
 
-module.export =  {
+module.exports =  {
   generateResponse,
   generateSummary,
 };
